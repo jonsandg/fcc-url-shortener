@@ -1,0 +1,26 @@
+{
+  "name": "fcc-url-shortener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "supervisor index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonsandg/fcc-url-shortener.git"
+  },
+  "author": "Jonathan Sandgren",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonsandg/fcc-url-shortener/issues"
+  },
+  "homepage": "https://github.com/jonsandg/fcc-url-shortener#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "mongoose": "^4.4.17",
+    "shortid": "^2.2.6",
+    "valid-url": "^1.0.9"
+  }
+}
