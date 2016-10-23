@@ -68,7 +68,7 @@ app.get('/new/*', function (req, res) {
 });
 
 app.get('/:url', function (req, res) {
-
+    console.log("accessing " + req.params.url);
     shortUrl.findOneAndUpdate({
         short_url: req.params.url
     }, {
