@@ -31,7 +31,7 @@ var urlSchema = mongoose.Schema({
 });
 
 var shortUrl = mongoose.model('ShortUrl', urlSchema);
-var baseUrl = process.env.BASE_URL || ('http://localhost:' + app.get('port') + '/');
+var baseUrl = process.env.BASE_URL || ('https://intense-retreat-50168.herokuapp.com/');
 
 app.get('/', function (req, res) {
     res.render('index');
