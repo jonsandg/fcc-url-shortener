@@ -76,9 +76,11 @@ app.get('/:url', function (req, res) {
             clicks: 1
         }
     }, function (err, doc) {
-        if (err) res.json({
-            error: 'URL does not exist'
-        });
+        if (!doc || err) {
+            res.json({
+                error: 'URL does not exist'
+            });
+        }
         else {
             res.redirect(doc.url);
         }
